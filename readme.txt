@@ -1,4 +1,4 @@
-this is application is working fine.
+this application is working fine.
 
 steps:
 
