@@ -1,0 +1,51 @@
+swagger: "2.0"
+info:
+  title: "test-endpoint-v1"
+  description: "endpoint-v1"
+  version: "1.0.0"
+host: "test-1-179209.appspot.com"
+schemes:
+  - "https"
+paths:
+  "/employee":
+    get:
+      description: "Get the employee name."
+      operationId: "employee"
+      parameters:
+        -
+          name: employee
+          in: path
+          required: true
+          type: string
+      responses:
+        200:
+          description: "Success."
+          schema:
+            type: string
+        400:
+          description: "Invalid path."
+
+  "/city":
+    get:
+      description: "Get the city name."
+      operationId: "citydata"
+      parameters:
+        -
+          name: city
+          in: path
+          required: true
+          type: string
+      responses:
+        200:
+          description: "Success."
+          schema:
+            type: string
+        400:
+          description: "Invalid path."
+
+
+
+
+
+
+
